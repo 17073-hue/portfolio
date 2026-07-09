@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Kanit',sans-serif;
+    background:#f5f7fb;
+    color:#333;
+
+}
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#003366;
+    color:white;
+
+}
+
+.logo{
+
+    font-size:28px;
+    font-weight:700;
+
+}
+
+nav ul{
+
+    list-style:none;
+    display:flex;
+    gap:25px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#ffd54f;
+
+}
+
+.active{
+
+    color:#ffd54f;
+
+}
+
+.hero{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:70px 8%;
+
+    min-height:80vh;
+
+}
+
+.hero-text{
+
+    width:55%;
+
+}
+
+.hero-text h1{
+
+    font-size:50px;
+    color:#003366;
+
+}
+
+.hero-text h2{
+
+    margin-top:10px;
+    font-size:34px;
+
+}
+
+.hero-text p{
+
+    margin-top:20px;
+    line-height:1.8;
+    font-size:18px;
+
+}
+
+.buttons{
+
+    margin-top:35px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:12px 25px;
+
+    background:#003366;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    margin-right:15px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#0055aa;
+
+}
+
+.btn2{
+
+    background:#ff9800;
+
+}
+
+.btn2:hover{
+
+    background:#fb8c00;
+
+}
+
+.hero-image{
+
+    width:35%;
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:320px;
+    height:320px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+footer{
+
+    background:#003366;
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+    flex-direction:column-reverse;
+    text-align:center;
+
+}
+
+.hero-text{
+
+    width:100%;
+
+}
+
+.hero-image{
+
+    width:100%;
+    margin-bottom:30px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+header{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+}
