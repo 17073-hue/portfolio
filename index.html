@@ -3,73 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | หน้าหลัก</title>
+    <title>Portfolio | อุษณียา คดีเวียง</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+    <!-- เมนู -->
+    <header>
+        <nav>
+            <h2 class="logo">My Portfolio</h2>
 
-    <div class="logo">
-        My Portfolio
-    </div>
+            <ul>
+                <li><a href="#home">หน้าหลัก</a></li>
+                <li><a href="#about">เกี่ยวกับฉัน</a></li>
+                <li><a href="#skills">ทักษะ</a></li>
+                <li><a href="#projects">ผลงาน</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">หน้าหลัก</a></li>
-            <li><a href="education.html">ประวัติการศึกษา</a></li>
-            <li><a href="personal.html">ประวัติส่วนตัว</a></li>
-            <li><a href="activities.html">ผลงาน/กิจกรรม</a></li>
-            <li><a href="contact.html">ติดต่อ</a></li>
-        </ul>
-    </nav>
+    <!-- หน้าแรก -->
+    <section id="home" class="hero">
 
-</header>
+        <img src="images/profile.jpg" alt="Profile" class="profile">
 
-<section class="hero">
+        <h1>สวัสดีครับ 👋</h1>
 
-    <div class="hero-text">
-
-        <h1>สวัสดีค่ะ</h1>
-
-        <h2>ดิฉันชื่อ นางสาวอุษณียา คดีเวียง</h2>
+        <h2>ผมชื่อ <span>ชื่อของคุณ</span></h2>
 
         <p>
-            ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio
-            เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมข้อมูลส่วนตัว
-            ประวัติการศึกษา ผลงาน และกิจกรรมต่าง ๆ
-            เพื่อใช้ประกอบการศึกษาต่อระดับอุดมศึกษา
+            นักเรียนชั้นมัธยมศึกษาปีที่ 6<br>
+            สนใจด้านการพัฒนาเว็บไซต์ การเขียนโปรแกรม
+            และเทคโนโลยี
         </p>
 
-        <div class="buttons">
-            <a href="personal.html" class="btn">ประวัติส่วนตัว</a>
-            <a href="activities.html" class="btn btn2">ผลงาน</a>
+        <a href="#projects" class="btn">ชมผลงาน</a>
+
+    </section>
+
+    <!-- เกี่ยวกับฉัน -->
+    <section id="about">
+
+        <h2>เกี่ยวกับฉัน</h2>
+
+        <p>
+            ผมเป็นนักเรียนที่มีความสนใจด้านการเขียนโปรแกรม
+            และกำลังพัฒนาเว็บไซต์ Portfolio ด้วย HTML CSS
+            และ JavaScript เพื่อใช้แสดงผลงานและพัฒนาทักษะ
+            สำหรับศึกษาต่อในระดับมหาวิทยาลัย
+        </p>
+
+    </section>
+
+    <!-- ทักษะ -->
+    <section id="skills">
+
+        <h2>ทักษะ</h2>
+
+        <div class="card">
+            <h3>HTML</h3>
+            <p>สร้างโครงสร้างเว็บไซต์</p>
         </div>
 
-    </div>
+        <div class="card">
+            <h3>CSS</h3>
+            <p>ออกแบบและตกแต่งเว็บไซต์</p>
+        </div>
 
-    <div class="hero-image">
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>เพิ่มความสามารถให้เว็บไซต์</p>
+        </div>
 
-        <img src="images/profile.jpg" alt="Profile">
+        <div class="card">
+            <h3>Git & GitHub</h3>
+            <p>จัดการเวอร์ชันและเผยแพร่เว็บไซต์</p>
+        </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- ผลงาน -->
+    <section id="projects">
 
-<footer>
+        <h2>ผลงาน</h2>
 
-    <p>
-        © 2026 Portfolio | จัดทำโดย นางสาวอุษณียา คดีเวียง
-    </p>
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>เว็บไซต์ Portfolio ที่พัฒนาด้วย HTML CSS JavaScript</p>
+        </div>
 
-</footer>
+        <div class="card">
+            <h3>Project 2</h3>
+            <p>เพิ่มผลงานของคุณที่นี่</p>
+        </div>
 
-<script src="js/script.js"></script>
+    </section>
+
+    <!-- ติดต่อ -->
+    <section id="contact">
+
+        <h2>ติดต่อ</h2>
+
+        <p>Email : your@email.com</p>
+
+        <p>GitHub : github.com/username</p>
+
+        <p>Facebook : Your Name</p>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 Portfolio | ชื่อของคุณ</p>
+
+    </footer>
 
 </body>
 </html>
