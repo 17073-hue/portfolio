@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ผลงาน | อุษณียา คดีเวียง</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<canvas id="sparkles"></canvas>
+
+<nav class="topnav">
+  <div class="brand">
+    <span class="brand-badge">&#128081;</span>
+    อุษณียา คดีเวียง
+  </div>
+  <button class="nav-toggle" aria-label="เปิดเมนู">&#9776;</button>
+  <ul class="navlinks">
+    <li><a href="index.html">หน้าหลัก</a></li>
+    <li><a href="personal.html">ประวัติส่วนตัว</a></li>
+    <li><a href="education.html">ประวัติการศึกษา</a></li>
+    <li><a href="activities.html" aria-current="page">ผลงาน</a></li>
+    <li><a href="contact.html">ติดต่อ</a></li>
+  </ul>
+</nav>
+
+<main>
+  <header class="page-header">
+    <span class="eyebrow">Treasure Gallery</span>
+    <h1>ผลงาน</h1>
+  </header>
+  <div class="flourish"></div>
+
+  <div class="work-grid">
+    <!-- คัดลอกบล็อก .work-card ทั้งก้อนเพื่อเพิ่มผลงานใหม่ -->
+    <div class="card work-card">
+      <div class="thumb">
+        <!-- เปลี่ยนเป็น <img src="images/works/ชื่อไฟล์.jpg" alt="..."> เมื่อมีรูปผลงาน -->
+        <span>รูปผลงานที่ 1</span>
+      </div>
+      <h3>ชื่อผลงาน (แก้ไขตรงนี้)</h3>
+      <p>คำอธิบายสั้นๆ เกี่ยวกับผลงานหรือกิจกรรมนี้</p>
+      <span class="tag">หมวดหมู่</span>
+    </div>
+
+    <div class="card work-card">
+      <div class="thumb">
+        <span>รูปผลงานที่ 2</span>
+      </div>
+      <h3>ชื่อผลงาน (แก้ไขตรงนี้)</h3>
+      <p>คำอธิบายสั้นๆ เกี่ยวกับผลงานหรือกิจกรรมนี้</p>
+      <span class="tag">หมวดหมู่</span>
+    </div>
+
+    <div class="card work-card">
+      <div class="thumb">
+        <span>รูปผลงานที่ 3</span>
+      </div>
+      <h3>ชื่อผลงาน (แก้ไขตรงนี้)</h3>
+      <p>คำอธิบายสั้นๆ เกี่ยวกับผลงานหรือกิจกรรมนี้</p>
+      <span class="tag">หมวดหมู่</span>
+    </div>
+  </div>
+
+  <div class="note" style="margin-top:22px;">
+    วางรูปผลงานไว้ในโฟลเดอร์ <code>images/works/</code> แล้วแทนที่ <code>&lt;span&gt;รูปผลงานที่ N&lt;/span&gt;</code> ด้วย <code>&lt;img src="images/works/ชื่อไฟล์.jpg" alt="..."&gt;</code> ในไฟล์ activities.html สามารถเพิ่ม/ลบการ์ดผลงานได้ตามจำนวนจริง
+  </div>
+</main>
+
+<footer>&copy; 2026 อุษณียา คดีเวียง — Portfolio Website</footer>
+
+<script src="sparkles.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
