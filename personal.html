@@ -1,18 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-    <title>ประวัติส่วนตัว</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ประวัติส่วนตัว | อุษณียา คดีเวียง</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>ประวัติส่วนตัว</h1>
-<img src="images/
-CB716EF3-6114-4333-B5AE-67C778B6EC63.jpeg"width="50">
-<p>
-  ชื่อ อุษณียา คดีเวียง<br>
-  ชื่อเล่น โอปอ<br>
-  วันเกิด 24/07/2008<br>
-  ชอบสี ฟ้า ชมพู ส้ม ม่วง<br>
-  ชอบกิน สุกกี้ ก๋วยเกี๋ยว<br>
-</p>
+
+<canvas id="sparkles"></canvas>
+
+<nav class="topnav">
+  <div class="brand">
+    <span class="brand-badge">&#128081;</span>
+    อุษณียา คดีเวียง
+  </div>
+  <button class="nav-toggle" aria-label="เปิดเมนู">&#9776;</button>
+  <ul class="navlinks">
+    <li><a href="index.html">หน้าหลัก</a></li>
+    <li><a href="personal.html" aria-current="page">ประวัติส่วนตัว</a></li>
+    <li><a href="education.html">ประวัติการศึกษา</a></li>
+    <li><a href="activities.html">ผลงาน</a></li>
+    <li><a href="contact.html">ติดต่อ</a></li>
+  </ul>
+</nav>
+
+<main>
+  <header class="page-header">
+    <span class="eyebrow">About Me</span>
+    <h1>ประวัติส่วนตัว</h1>
+  </header>
+  <div class="flourish"></div>
+
+  <div class="card">
+    <div class="profile-block">
+      <div class="profile-photo-wrap">
+        <span class="crown-icon">&#128081;</span>
+        <span class="orbit-ring"></span>
+        <!-- รูปโปรไฟล์: วางไฟล์รูปในโฟลเดอร์ images/ แล้วแก้ src ด้านล่างให้ตรงกับชื่อไฟล์ -->
+        <img class="profile-photo" src="images/profile.jpg" alt="รูปอุษณียา คดีเวียง">
+      </div>
+
+      <dl class="info-list">
+        <dt>ชื่อ</dt><dd>อุษณียา คดีเวียง</dd>
+        <dt>ชื่อเล่น</dt><dd>โอปอ</dd>
+        <dt>วันเกิด</dt><dd>24/07/2551</dd>
+        <dt>เบอร์โทร</dt><dd>084-130-2910</dd>
+        <dt>ส่วนสูง</dt><dd>167 ซม.</dd>
+        <dt>น้ำหนัก</dt><dd>59 กก.</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="note">
+    วางไฟล์รูปโปรไฟล์ไว้ที่ <code>images/profile.jpg</code> (หรือเปลี่ยนชื่อไฟล์ตามต้องการ แล้วแก้ attribute <code>src</code> ใน personal.html บรรทัด img.profile-photo ให้ตรงกัน) ถ้ายังไม่มีรูป กรอบวงรีจะแสดงพื้นหลังสีชมพูอ่อนแทนโดยอัตโนมัติ
+  </div>
+</main>
+
+<footer>&copy; 2026 อุษณียา คดีเวียง — Portfolio Website</footer>
+
+<script src="sparkles.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
