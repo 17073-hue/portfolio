@@ -1,124 +1,97 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | อุษณียา คดีเวียง</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio ของ อุษณียา คดีเวียง</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- เมนู -->
-    <header>
-        <nav>
-            <h2 class="logo">My Portfolio</h2>
+<canvas id="sparkles"></canvas>
 
-            <ul>
-                <li><a href="#home">หน้าหลัก</a></li>
-                <li><a href="#about">เกี่ยวกับฉัน</a></li>
-                <li><a href="#skills">ทักษะ</a></li>
-                <li><a href="#projects">ผลงาน</a></li>
-                <li><a href="#contact">ติดต่อ</a></li>
-            </ul>
-        </nav>
-    </header>
+<nav class="topnav">
+  <div class="brand">
+    <span class="brand-badge">&#128081;</span>
+    อุษณียา คดีเวียง
+  </div>
+  <button class="nav-toggle" aria-label="เปิดเมนู">&#9776;</button>
+  <ul class="navlinks">
+    <li><a href="index.html" aria-current="page">หน้าหลัก</a></li>
+    <li><a href="personal.html">ประวัติส่วนตัว</a></li>
+    <li><a href="education.html">ประวัติการศึกษา</a></li>
+    <li><a href="activities.html">ผลงาน</a></li>
+    <li><a href="contact.html">ติดต่อ</a></li>
+  </ul>
+</nav>
 
-    <!-- หน้าแรก -->
-    <section id="home" class="hero">
+<main>
+  <section class="hero">
+    <div>
+      <span class="kicker">&#10022; Once Upon a Portfolio &#10022;</span>
+      <h1>Portfolio of <br><span class="accent">โอปอ</span></h1>
+      <!-- แก้ระดับชั้น/รายละเอียดแนะนำตัวตรงนี้ -->
+      <p class="lede">นักเรียนชั้นมัธยมศึกษาปีที่ ... (แก้ไขตรงนี้) เว็บไซต์เล็กๆ หลังนี้รวบรวมประวัติส่วนตัว ประวัติการศึกษา และผลงานไว้ด้วยกัน เหมือนสมุดบันทึกของเจ้าหญิงตัวน้อยที่ตั้งใจสร้างขึ้นมาเอง เพื่อใช้แนะนำตัวสำหรับการศึกษาต่อและโอกาสดีๆ ในอนาคต</p>
+      <div class="hero-cta">
+        <a href="personal.html" class="btn btn-solid">ดูประวัติส่วนตัว</a>
+        <a href="contact.html" class="btn btn-ghost">ช่องทางการติดต่อ</a>
+      </div>
+    </div>
 
-        <img src="images/profile.jpg" alt="Profile" class="profile">
-
-        <h1>สวัสดีครับ 👋</h1>
-
-        <h2>ผมชื่อ <span>ชื่อของคุณ</span></h2>
-
-        <p>
-            นักเรียนชั้นมัธยมศึกษาปีที่ 6<br>
-            สนใจด้านการพัฒนาเว็บไซต์ การเขียนโปรแกรม
-            และเทคโนโลยี
-        </p>
-
-        <a href="#projects" class="btn">ชมผลงาน</a>
-
-    </section>
-
-    <!-- เกี่ยวกับฉัน -->
-    <section id="about">
-
-        <h2>เกี่ยวกับฉัน</h2>
-
-        <p>
-            ผมเป็นนักเรียนที่มีความสนใจด้านการเขียนโปรแกรม
-            และกำลังพัฒนาเว็บไซต์ Portfolio ด้วย HTML CSS
-            และ JavaScript เพื่อใช้แสดงผลงานและพัฒนาทักษะ
-            สำหรับศึกษาต่อในระดับมหาวิทยาลัย
-        </p>
-
-    </section>
-
-    <!-- ทักษะ -->
-    <section id="skills">
-
-        <h2>ทักษะ</h2>
-
-        <div class="card">
-            <h3>HTML</h3>
-            <p>สร้างโครงสร้างเว็บไซต์</p>
+    <div class="id-card">
+      <div class="id-card-top">
+        <span class="school">ROYAL STUDENT BADGE</span>
+        <span class="gold-dot"></span>
+      </div>
+      <div class="id-card-body">
+        <div class="id-photo">
+          <span class="crown">&#128081;</span>
+          <span class="ring"></span>
+          <span class="ring2"></span>
+          <span class="core">
+            <!-- เปลี่ยนเป็น <img src="images/profile-small.jpg" alt="รูปอุษณียา คดีเวียง"> เมื่อมีรูป -->
+            รูปนักเรียน
+          </span>
         </div>
-
-        <div class="card">
-            <h3>CSS</h3>
-            <p>ออกแบบและตกแต่งเว็บไซต์</p>
+        <div class="id-info">
+          <div class="name">อุษณียา คดีเวียง</div>
+          <div class="role">ชั้นมัธยมศึกษาปีที่ ... (แก้ไขตรงนี้)</div>
+          <div class="role">ชื่อเล่น: โอปอ</div>
         </div>
+      </div>
+      <div class="id-card-strip"></div>
+    </div>
+  </section>
 
-        <div class="card">
-            <h3>JavaScript</h3>
-            <p>เพิ่มความสามารถให้เว็บไซต์</p>
-        </div>
+  <section>
+    <div class="grid-links">
+      <a class="link-card" href="personal.html">
+        <span class="num">01</span>
+        <h3>ประวัติส่วนตัว</h3>
+        <p>ข้อมูลทั่วไปและรูปภาพของฉัน</p>
+      </a>
+      <a class="link-card" href="education.html">
+        <span class="num">02</span>
+        <h3>ประวัติการศึกษา</h3>
+        <p>เส้นทางการเรียนตั้งแต่อดีตถึงปัจจุบัน</p>
+      </a>
+      <a class="link-card" href="activities.html">
+        <span class="num">03</span>
+        <h3>ผลงาน</h3>
+        <p>ผลงานและกิจกรรมที่เคยทำ</p>
+      </a>
+      <a class="link-card" href="contact.html">
+        <span class="num">04</span>
+        <h3>ติดต่อ</h3>
+        <p>ช่องทางการติดต่อฉัน</p>
+      </a>
+    </div>
+  </section>
+</main>
 
-        <div class="card">
-            <h3>Git & GitHub</h3>
-            <p>จัดการเวอร์ชันและเผยแพร่เว็บไซต์</p>
-        </div>
+<footer>&copy; 2026 อุษณียา คดีเวียง — Portfolio Website</footer>
 
-    </section>
-
-    <!-- ผลงาน -->
-    <section id="projects">
-
-        <h2>ผลงาน</h2>
-
-        <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>เว็บไซต์ Portfolio ที่พัฒนาด้วย HTML CSS JavaScript</p>
-        </div>
-
-        <div class="card">
-            <h3>Project 2</h3>
-            <p>เพิ่มผลงานของคุณที่นี่</p>
-        </div>
-
-    </section>
-
-    <!-- ติดต่อ -->
-    <section id="contact">
-
-        <h2>ติดต่อ</h2>
-
-        <p>Email : your@email.com</p>
-
-        <p>GitHub : github.com/username</p>
-
-        <p>Facebook : Your Name</p>
-
-    </section>
-
-    <footer>
-
-        <p>© 2026 Portfolio | ชื่อของคุณ</p>
-
-    </footer>
-
+<script src="sparkles.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
